@@ -1,0 +1,123 @@
+* {
+  font-family: system-ui;
+  font-weight: 400;
+  color: lightgray;
+}
+
+html {
+  min-height: 90dvh;
+  background-color: #2f3136;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.stats {
+  text-align: center;
+}
+
+#gameUI {
+  text-align: center;
+}
+
+#start {
+  background: none;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  width: 5rem;
+  height: 2.4rem;
+  margin-bottom: 10px;
+}
+
+#penality-malus {
+  margin-left: -11px;
+  color: red;
+}
+
+#prices {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  font-size: 0.5rem;
+}
+
+#paid,
+#to-pay {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+#register {
+  position: fixed;
+  bottom: 0;
+  left: 5vw;
+  width: 90vw;
+}
+
+#bills,
+#coins {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#bills button,
+#coins button {
+  border: none;
+  background: none;
+}
+
+#bills button {
+  width: 50%;
+}
+
+#coins button {
+  width: 25%;
+}
+
+#bills button img,
+#coins button img {
+  width: 100%;
+  height: auto;
+  filter: brightness(0.8);
+}
+
+#returned-money {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#returned-money img {
+  height: 11vw;
+  width: auto;
+  margin: 0 0 1vw 1vw;
+  filter: brightness(0.8);
+}
+
+@media screen and (min-width: 450px) {
+  #paid,
+  #to-pay {
+    font-size: 3rem;
+  }
+
+  #bills button {
+    width: 25%;
+  }
+
+  #coins button {
+    width: 12.5%;
+  }
+
+  #returned-money img {
+    height: 7vw;
+  }
+}

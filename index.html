@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="images/favicon.ico">
+    <script src="index.js"></script>
+    <title>Rendu Monnaie</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="stats">BEST<br /><span id="best-time">00:00</span></div>
+
+      <div id="gameUI">
+        <button id="start" onclick="start()">START</button><br />
+        <span id="chrono">00:00</span><br />
+        <span id="penality-malus"></span>
+        <p id="game-message" />
+      </div>
+
+      <div class="stats">AVERAGE<br /><span id="average-time">00:00</span></div>
+    </header>
+
+    <div id="prices">
+      <p class="price"><strong>REÇU :</strong><span id="paid">00.00€</span></p>
+      <p class="price"><strong>SUR :</strong><span id="to-pay">00.00€</span></p>
+    </div>
+
+    <div id="returned-money"></div>
+
+    <div id="register">
+      <div id="bills">
+        <button onclick="addMoney(5000)">
+          <img
+            src="images/50euro.png"
+            alt="50 euros"
+            height="850"
+            width="1600"
+          />
+        </button>
+        <button onclick="addMoney(2000)">
+          <img
+            src="images/20euro.png"
+            alt="20 euros"
+            height="850"
+            width="1600"
+          />
+        </button>
+        <button onclick="addMoney(1000)">
+          <img
+            src="images/10euro.png"
+            alt="10 euros"
+            height="850"
+            width="1600"
+          />
+        </button>
+        <button onclick="addMoney(500)">
+          <img src="images/5euro.png" alt="5 euros" height="850" width="1600" />
+        </button>
+      </div>
+
+      <div id="coins">
+        <button onclick="addMoney(1)">
+          <img
+            src="images/1centime.png"
+            alt="1 centime"
+            height="500"
+            width="500"
+          />
+        </button>
+        <button onclick="addMoney(2)">
+          <img
+            src="images/2centime.png"
+            alt="2 centimes"
+            height="500"
+            width="500"
+          />
+        </button>
+        <button onclick="addMoney(5)">
+          <img
+            src="images/5centime.png"
+            alt="5 centimes"
+            height="500"
+            width="500"
+          />
+        </button>
+        <button onclick="addMoney(10)">
+          <img
+            src="images/10centime.png"
+            alt="10 centimes"
+            height="500"
+            width="500"
+          />
+        </button>
+
+        <button onclick="addMoney(20)">
+          <img
+            src="images/20centime.png"
+            alt="20 centimes"
+            height="500"
+            width="500"
+          />
+        </button>
+        <button onclick="addMoney(50)">
+          <img
+            src="images/50centime.png"
+            alt="50 centimes"
+            height="500"
+            width="500"
+          />
+        </button>
+        <button onclick="addMoney(100)">
+          <img src="images/1euro.png" alt="1 euro" height="500" width="500" />
+        </button>
+        <button onclick="addMoney(200)">
+          <img src="images/2euro.png" alt="2 euros" height="500" width="500" />
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
